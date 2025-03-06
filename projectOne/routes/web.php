@@ -28,3 +28,8 @@ Route::get('/contact', function () {
 Route::get('/service', function () {
     return 'Service Page';
 });
+
+Route::get('/user/{id}', function ($id) {
+    return $id;
+});
+
