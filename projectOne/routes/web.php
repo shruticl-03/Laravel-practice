@@ -36,3 +36,11 @@ Route::get('/user/{id}', function ($id) {
 Route::get('/postid/{post_id}/commentid/{comment_id}', function ($post_id, $comment_id) {
     return 'Post ID:' . $post_id . 'Comment ID:' . $comment_id;
 });
+
+Route::get('student/{name?}', function ($name =null ){
+    return 'Hello ' . $name . ' Welcome'; 
+});
+
+Route::get('student/{name?}', function ($name ='Shruti' ){
+    return 'Hello ' . $name . ' Welcome'; 
+});
