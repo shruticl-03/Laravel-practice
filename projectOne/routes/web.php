@@ -50,10 +50,16 @@ Route::get('product/{p_name}', function ($name) {
 })->where('p_name', '[A-Za-z]+');
 
 
-Route::get('manager/{id}/{name}', function($id, $name){
+Route::get('manager/{id}/{name}', function ($id, $name) {
     return "Manager ID: " . $id . " Manager Name: " . $name;
-})->where(['id'=>'[0-9]+', 'name'=>'[a-z]+']);
+})->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
 
-Route::get('employee/{id}/{name}', function($id, $name){
+Route::get('employee/{id}/{name}', function ($id, $name) {
     return "Employee ID: " . $id . " Employee Name: " . $name;
 })->whereNumber('id')->whereAlpha('name');
+
+Route::redirect('yaha', 'waha');
+
+Route::fallback(function () {
+    return "Defualt Message";
+});
