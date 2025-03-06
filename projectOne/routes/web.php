@@ -33,3 +33,6 @@ Route::get('/user/{id}', function ($id) {
     return $id;
 });
 
+Route::get('/postid/{post_id}/commentid/{comment_id}', function ($post_id, $comment_id) {
+    return 'Post ID:' . $post_id . 'Comment ID:' . $comment_id;
+});
