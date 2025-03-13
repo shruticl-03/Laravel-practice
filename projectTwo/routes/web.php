@@ -23,3 +23,9 @@ Route::get('/about', function(){
 });
 
 // Route::view('about', 'aboutme');
+
+Route::get('admin', function(){
+    return View('admin.profile');
+});
+
+// Route::view('adminprofile', 'admin.profile');
