@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('', [AboutController::class, 'show1']);
-Route::get('about', [AboutController::class, 'show2']);
+Route::get('about', [AboutController::class, 'show']);
+
 // Route::get('about/{name}', [AboutController::class, 'show']);
+
+Route::get('/profile', [AdminProfileController::class, 'show_profile']);
+
+// Route::get('about/{name}', [AboutController::class, 'show']);
+
+Route::get('about1', [AboutController::class, 'show1']);
+Route::get('about2', [AboutController::class, 'show2']);
+
