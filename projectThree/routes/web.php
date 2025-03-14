@@ -34,4 +34,12 @@ Route::get('student/{name?}', function ($name = null) {
     return view('mystudent', ['name' => $name]);
 });
 
+// Route::get('student/{name?}', function ($name = 'Shruti') {
+//     return view('mystudent', ['name' => $name]);
+// });
+
+Route::get('product/{p_name}', function ($name) {
+    return view('myproduct', ['name' => $name]);
+})->where('p_name','[A-Za-z]+');
+
 
