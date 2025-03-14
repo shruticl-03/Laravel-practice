@@ -40,6 +40,8 @@ Route::get('student/{name?}', function ($name = null) {
 
 Route::get('product/{p_name}', function ($name) {
     return view('myproduct', ['name' => $name]);
-})->where('p_name','[A-Za-z]+');
+})->where('p_name', '[A-Za-z]+');
 
-
+Route::get('manager/{id}/{name}', function ($id, $name) {
+    return view('mymanager', ['id' => $id, 'name' => $name]);
+})->whereNumber(['id' => '[0-9]+', 'name' => '[a-z]+']);
