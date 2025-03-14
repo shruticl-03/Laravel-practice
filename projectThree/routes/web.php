@@ -51,4 +51,5 @@ Route::get('employee/{id}/{name}',function($id,$name){
 })->whereNumber('id')->whereAlpha('name');
 
 Route::view('login','mylogin');
+Route::view('register','myregister');
 
