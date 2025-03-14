@@ -12,8 +12,13 @@ class AboutController extends Controller
     // }
 
     // Controller Returning String with Parameter
-    function show($name){
-        return "Hello " .$name;
-    }
+    // function show($name){
+    //     return "Hello " .$name;
+    // }
 
+    // Controller Returning View
+    function show()
+    {
+        return view('aboutme');
+    }
 }
