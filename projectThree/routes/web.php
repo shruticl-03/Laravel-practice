@@ -25,3 +25,7 @@ Route::get('about', function () {
 Route::get('user/{u_id}', function ($id) {
     return view('myuser', ['id' => $id]);
 });
+
+Route::get('post/{post_id}/comment/{comment_id}',function($post_id, $comment_id){
+    return view('mypost',['postid'=>$post_id, 'commentid'=>$comment_id]);
+});
