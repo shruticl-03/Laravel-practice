@@ -45,3 +45,7 @@ Route::get('product/{p_name}', function ($name) {
 Route::get('manager/{id}/{name}', function ($id, $name) {
     return view('mymanager', ['id' => $id, 'name' => $name]);
 })->whereNumber(['id' => '[0-9]+', 'name' => '[a-z]+']);
+
+Route::get('employee/{id}/{name}',function($id,$name){
+    return view('myemployee',['id'=>$id,'name'=>$name]);
+})->whereNumber('id')->whereAlpha('name');
