@@ -46,10 +46,23 @@ Route::get('manager/{id}/{name}', function ($id, $name) {
     return view('mymanager', ['id' => $id, 'name' => $name]);
 })->whereNumber(['id' => '[0-9]+', 'name' => '[a-z]+']);
 
-Route::get('employee/{id}/{name}',function($id,$name){
-    return view('myemployee',['id'=>$id,'name'=>$name]);
+Route::get('employee/{id}/{name}', function ($id, $name) {
+    return view('myemployee', ['id' => $id, 'name' => $name]);
 })->whereNumber('id')->whereAlpha('name');
 
-Route::view('login','mylogin');
-Route::view('register','myregister');
+//Route Redirection
+Route::view('login', 'mylogin');
+Route::view('register', 'myregister');
 
+// Route::redirect('login', 'register');
+
+// Route Redirection with status code
+// Route::redirect('login', 'register', 301);
+
+// Route Permanent Redirection
+// Route::permanentRedirect('login', 'register');
+
+//Fallback Route
+Route::fallback(function(){
+    return view('mydefault');
+});
