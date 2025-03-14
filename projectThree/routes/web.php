@@ -18,6 +18,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('about', function(){
+Route::get('about', function () {
     return view('myabout');
+});
+
+Route::get('user/{u_id}', function ($id) {
+    return view('myuser', ['id' => $id]);
 });
