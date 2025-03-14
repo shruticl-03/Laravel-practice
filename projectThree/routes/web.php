@@ -49,3 +49,6 @@ Route::get('manager/{id}/{name}', function ($id, $name) {
 Route::get('employee/{id}/{name}',function($id,$name){
     return view('myemployee',['id'=>$id,'name'=>$name]);
 })->whereNumber('id')->whereAlpha('name');
+
+Route::view('login','mylogin');
+
