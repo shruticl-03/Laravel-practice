@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminProfileController;
+use App\Http\Controllers\ShowAbout;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,3 +31,4 @@ Route::get('/profile', [AdminProfileController::class, 'show_profile']);
 Route::get('about1', [AboutController::class, 'show1']);
 Route::get('about2', [AboutController::class, 'show2']);
 
+Route::get('showabout', ShowAbout::class);
