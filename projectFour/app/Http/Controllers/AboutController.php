@@ -29,9 +29,19 @@ class AboutController extends Controller
     // }
 
     // Passing Data from Controller to View
-    function show()
+    // function show()
+    // {
+    //     $name = 'Shruti';
+    //     return view('aboutme', ['nm' => $name]);
+    // }
+
+    // Multiple Methods inside Controller
+    function show1()
     {
-        $name = 'Shruti';
-        return view('aboutme', ['nm' => $name]);
+        return view('aboutme');
+    }
+    function show2()
+    {
+        return view('aboutyou');
     }
 }

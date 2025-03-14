@@ -18,5 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('about', [AboutController::class, 'show']);
-Route::get('about/{name}', [AboutController::class, 'show']);
+Route::get('', [AboutController::class, 'show1']);
+Route::get('about', [AboutController::class, 'show2']);
+// Route::get('about/{name}', [AboutController::class, 'show']);
