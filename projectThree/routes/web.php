@@ -26,6 +26,12 @@ Route::get('user/{u_id}', function ($id) {
     return view('myuser', ['id' => $id]);
 });
 
-Route::get('post/{post_id}/comment/{comment_id}',function($post_id, $comment_id){
-    return view('mypost',['postid'=>$post_id, 'commentid'=>$comment_id]);
+Route::get('post/{post_id}/comment/{comment_id}', function ($post_id, $comment_id) {
+    return view('mypost', ['postid' => $post_id, 'commentid' => $comment_id]);
 });
+
+Route::get('student/{name?}', function ($name = null) {
+    return view('mystudent', ['name' => $name]);
+});
+
+
