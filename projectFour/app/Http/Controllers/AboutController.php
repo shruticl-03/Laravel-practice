@@ -6,7 +6,14 @@ use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-    function show(){
-        return "Hello";
+    // Controller Returning String
+    // function show(){
+    //     return "Hello";
+    // }
+
+    // Controller Returning String with Parameter
+    function show($name){
+        return "Hello " .$name;
     }
+
 }
