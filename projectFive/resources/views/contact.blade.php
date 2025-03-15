@@ -45,17 +45,31 @@
     <h2>Hello User</h2>
     @endempty--}}
 
-    @production
+    {{--@production
     <h2>Production Code</h2>
-    @endproduction
+    @endproduction--}}
 
-    @env('local')
+    {{--@env('local')
     <h2>Local Environment</h2>
-    @endenv
+    @endenv--}}
 
-    @env(['local','staging'])
+    {{--@env(['local','staging'])
     <h2>Local or Staging Environment</h2>
-    @endenv
+    @endenv--}}
+
+    @switch(3)
+    @case(1)
+    <h2>First</h2>
+    @break
+    @case(2)
+    <h2>Second</h2>
+    @break
+    @case(3)
+    <h2>Third</h2>
+    @break
+    @default
+    <h2>Any</h2>
+    @endswitch
 
 
 </body>
