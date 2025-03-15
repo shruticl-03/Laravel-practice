@@ -25,13 +25,17 @@
     <h2>Hello Guest</h2>
     @endif--}}
 
-    @if($nm=='Shruti')
+    {{--@if($nm=='Shruti')
     <h2>Hello {{$nm}}</h2>
     @elseif($nm=='Navya')
     <h2>Hello {{$nm}}</h2>
     @else
     <h2>Hello Guest</h2>
-    @endif
+    @endif--}}
+
+    @unless($nm=='Shruti')
+    <h2>You are not admin</h2>
+    @endunless
 
 
 </body>
