@@ -15,9 +15,17 @@
     <!-- <h2>Time: {{time()}}</h2>
     <h2>SQRT: {{sqrt(366)}}</h2> -->
 
+    {{--@if($nm=='Shruti')
+    <h2>Hello {{$nm}}</h2>
+    @endif--}}
+
     @if($nm=='Shruti')
     <h2>Hello {{$nm}}</h2>
+    @else
+    <h2>Hello Guest</h2>
     @endif
+
+
 
 
 
