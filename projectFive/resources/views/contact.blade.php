@@ -37,6 +37,10 @@
     <h2>You are not admin</h2>
     @endunless
 
+    @isset($nm)
+    <h2>Hello User</h2>
+    @endisset
+
 
 </body>
 
