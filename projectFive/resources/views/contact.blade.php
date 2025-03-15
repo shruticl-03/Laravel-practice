@@ -41,9 +41,17 @@
     <h2>{{$nm}}</h2>
     @endisset--}}
 
-    @empty($nm=="")
+    {{--@empty($nm=="")
     <h2>Hello User</h2>
-    @endempty
+    @endempty--}}
+
+    @production
+    <h2>Production Code</h2>
+    @endproduction      
+
+    @env('local')
+    <h2>Local Environment</h2>
+    @endenv
 
 
 </body>
