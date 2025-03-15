@@ -37,9 +37,13 @@
     <h2>You are not admin</h2>
     @endunless--}}
 
-    @isset($nm)
+    {{--@isset($nm)
     <h2>{{$nm}}</h2>
-    @endisset
+    @endisset--}}
+
+    @empty($nm=="")
+    <h2>Hello User</h2>
+    @endempty
 
 
 </body>
