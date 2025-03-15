@@ -71,11 +71,13 @@
     <h2>Any</h2>
     @endswitch--}}
 
-    @for($i=0;$i<10;$i++)
+    {{--@for($i=0;$i<10;$i++)
     <h2>{{$i}}</h2>
-    @endfor
+    @endfor--}}
 
-    
+    @foreach($students as $stu)
+    <h2>{{$stu}}</h2>
+    @endforeach
 
 </body>
 
