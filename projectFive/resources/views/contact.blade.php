@@ -33,12 +33,12 @@
     <h2>Hello Guest</h2>
     @endif--}}
 
-    @unless($nm=='Shruti')
+    {{--@unless($nm=='Shruti')
     <h2>You are not admin</h2>
-    @endunless
+    @endunless--}}
 
     @isset($nm)
-    <h2>Hello User</h2>
+    <h2>{{$nm}}</h2>
     @endisset
 
 
