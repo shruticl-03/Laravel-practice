@@ -47,10 +47,14 @@
 
     @production
     <h2>Production Code</h2>
-    @endproduction      
+    @endproduction
 
     @env('local')
     <h2>Local Environment</h2>
+    @endenv
+
+    @env(['local','staging'])
+    <h2>Local or Staging Environment</h2>
     @endenv
 
 
