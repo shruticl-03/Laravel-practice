@@ -57,7 +57,7 @@
     <h2>Local or Staging Environment</h2>
     @endenv--}}
 
-    @switch(3)
+    {{--@switch(3)
     @case(1)
     <h2>First</h2>
     @break
@@ -69,8 +69,13 @@
     @break
     @default
     <h2>Any</h2>
-    @endswitch
+    @endswitch--}}
 
+    @for($i=0;$i<10;$i++)
+    <h2>{{$i}}</h2>
+    @endfor
+
+    
 
 </body>
 
