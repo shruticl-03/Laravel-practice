@@ -12,6 +12,11 @@
     <hr>
     <h2>Name: {{ $nm }}</h2>
 
+    <h2>Time: {{time()}}</h2>
+    <h2>SQRT: {{sqrt(366)}}</h2>
+
+    
+
 </body>
 
 </html>
