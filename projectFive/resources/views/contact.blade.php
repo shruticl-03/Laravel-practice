@@ -9,11 +9,10 @@
 
 <body>
     <h2>Contact Page</h2>
-    
+    <hr>
+
     @foreach($students as $stu)
-    @if($stu == 'Shruti')
-    @continue
-    @endif
+    @break($stu=='Ram')
     <h2>{{$stu}}</h2>
     @endforeach
 
