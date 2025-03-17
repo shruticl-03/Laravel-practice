@@ -75,9 +75,18 @@
     <h2>{{$i}}</h2>
     @endfor--}}
 
-    @foreach($students as $stu)
+    {{--@foreach($students as $stu)
     <h2>{{$stu}}</h2>
-    @endforeach
+    @endforeach--}}
+
+    @forelse($students as $stu)
+    <h2>{{$stu}}</h2>
+    @empty
+    <h2>No Students</h2>
+    @endforelse
+    
+
+
 
 </body>
 
