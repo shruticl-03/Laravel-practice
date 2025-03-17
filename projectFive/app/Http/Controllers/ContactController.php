@@ -10,7 +10,6 @@ class ContactController extends Controller
     {
         // $name = 'Shruti';
         $students = ['Abhi','Shruti', 'Ram', 'Shahil'];
-        // $students = [];
         return view('contact', [ 'students' => $students]);
     }
 }
