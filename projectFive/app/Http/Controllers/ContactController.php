@@ -8,9 +8,9 @@ class ContactController extends Controller
 {
     function show()
     {
-        $name = 'Shruti';
-        $students = ['Abhi', 'Ram', 'Shahil'];
+        // $name = 'Shruti';
+        $students = ['Abhi','Shruti', 'Ram', 'Shahil'];
         // $students = [];
-        return view('contact', ['nm' => $name, 'students' => $students]);
+        return view('contact', [ 'students' => $students]);
     }
 }
