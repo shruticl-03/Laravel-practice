@@ -10,7 +10,7 @@
 <body>
     <h2>Contact Page</h2>
     <hr>
-    <h2>Name: {{ $nm }}</h2>
+    <h2>Name: {{ $nm }}</h2> 
 
     <!-- <h2>Time: {{time()}}</h2>
     <h2>SQRT: {{sqrt(366)}}</h2> -->
@@ -79,16 +79,31 @@
     <h2>{{$stu}}</h2>
     @endforeach--}}
 
-    @forelse($students as $stu)
+    {{--@forelse($students as $stu)
     <h2>{{$stu}}</h2>
     @empty
     <h2>No Students</h2>
-    @endforelse
+    @endforelse--}} 
+
+    <!-- while condition -->
+    @while(true)
+    <h2>Hello</h2>
+    @endwhile
+
+    @while(true)
+    if (i === 5) {
+    break;
+    <h2>Hello Forever</h2>
+    }
+    i++;
+    @endwhile
 
 
 
 
-    
+
+
+
 
 
 
