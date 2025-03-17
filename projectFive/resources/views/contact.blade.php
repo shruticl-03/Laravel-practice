@@ -12,8 +12,13 @@
     <hr>
 
     @foreach($students as $stu)
-    @continue($stu=='Ram')
     <h2>{{$stu}}</h2>
+    @if($loop->first)
+    <h3>This is First Loop</h3>
+    @endif
+    @if($loop->last)
+    <h3>This is Last Loop</h3>
+    @endif
     @endforeach
 
 </body>
