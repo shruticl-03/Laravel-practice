@@ -12,7 +12,7 @@
     <hr>
 
     @foreach($students as $stu)
-    @break($stu=='Ram')
+    @continue($stu=='Ram')
     <h2>{{$stu}}</h2>
     @endforeach
 
