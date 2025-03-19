@@ -8,10 +8,11 @@
 <body>
     <h1>{{$wn}}'s Product Page</h1>
     <hr>
-    {{--@include('mobile',['total_mobile'=>4])--}}
+    @include('mobile',['total_mobile'=>4])
+    @includeIf('mobile1',['total_mobile'=>4])
     @includeWhen($userType,'mobile',['total_mobile'=>4])
+    @includeUnless($userType,'mobile',['total_mobile'=>4])
     
-
     
     
     

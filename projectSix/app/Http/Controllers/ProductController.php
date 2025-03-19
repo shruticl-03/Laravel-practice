@@ -11,8 +11,8 @@ class ProductController extends Controller
         $websiteName = 'ClickCart';
         $user = 'Admin';
         $userType = $user == 'Admin' ? true : false;
-        // $students = ['Shruti', 'Abhi', 'Ram', 'Shahil'];
-        // return view('product', ['wn' => $websiteName, 'userType' => $userType, 'students' => $students]);
-        return view('product', ['wn' => $websiteName, 'userType' => $userType]);
+        $students = ['Shruti', 'Abhi', 'Ram', 'Shahil'];
+        // return view('product', ['wn' => $websiteName, 'userType' => $userType]);
+        return view('product', ['wn' => $websiteName, 'userType' => $userType, 'students' => $students]);
     }
 }
