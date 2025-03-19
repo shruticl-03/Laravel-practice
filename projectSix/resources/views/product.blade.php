@@ -6,12 +6,17 @@
     <title>Product</title>
 </head>
 <body>
-    <h1>{{$wn}}'s Product Page</h1>
-    <hr>
-    @include('mobile',['total_mobile'=>4])
-    @includeIf('mobile1',['total_mobile'=>4])
-    @includeWhen($userType,'mobile',['total_mobile'=>4])
-    @includeUnless($userType,'mobile',['total_mobile'=>4])
+    <!-- <h1>{{$wn}}'s Product Page</h1> -->
+    <!-- <hr> -->
+    {{--@include('mobile',['total_mobile'=>4])--}}
+    {{--@includeIf('mobile1',['total_mobile'=>4])--}}
+    {{--@includeWhen($userType,'mobile',['total_mobile'=>4])--}}
+    {{--@includeUnless($userType,'mobile',['total_mobile'=>4])--}}
+
+    <h2>Students Name:</h2>
+    @foreach($students as $stu)
+    @include('students')
+    @endforeach
     
     
     
