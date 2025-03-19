@@ -18,7 +18,8 @@
     @include('students')
     @endforeach--}}
 
-    @each('students',$students,'stu')
+    {{--@each('students',$students,'stu')--}}
+    @each('students',$students, 'stu','nostudent')
     
     
     
