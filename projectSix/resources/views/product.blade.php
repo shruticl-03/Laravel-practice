@@ -14,9 +14,11 @@
     {{--@includeUnless($userType,'mobile',['total_mobile'=>4])--}}
 
     <h2>Students Name:</h2>
-    @foreach($students as $stu)
+    {{--@foreach($students as $stu)
     @include('students')
-    @endforeach
+    @endforeach--}}
+
+    @each('students',$students,'stu')
     
     
     
