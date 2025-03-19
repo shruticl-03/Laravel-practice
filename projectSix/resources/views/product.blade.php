@@ -25,8 +25,5 @@
     <h1>It will be evaluated once per rendering cycle</h1>
     @endonce
     
-    
-    
-    
 </body>
 </html>
