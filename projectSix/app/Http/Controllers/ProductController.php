@@ -8,10 +8,11 @@ class ProductController extends Controller
 {
     function display()
     {
-        // $websiteName = 'ClickCart';
+        $websiteName = 'ClickCart';
         // $user = 'Admin';
         // $userType = $user == 'Admin' ? true : false;
         // $students = ['Shruti', 'Abhi', 'Ram', 'Shahil'];
         // return view('product', ['wn' => $websiteName, 'userType' => $userType, 'students' => $students]);
+        return view('product', ['wn' => $websiteName]);
     }
 }
