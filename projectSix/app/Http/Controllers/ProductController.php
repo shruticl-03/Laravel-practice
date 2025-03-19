@@ -9,10 +9,10 @@ class ProductController extends Controller
     function display()
     {
         $websiteName = 'ClickCart';
-        // $user = 'Admin';
-        // $userType = $user == 'Admin' ? true : false;
+        $user = 'Admin';
+        $userType = $user == 'Admin' ? true : false;
         // $students = ['Shruti', 'Abhi', 'Ram', 'Shahil'];
         // return view('product', ['wn' => $websiteName, 'userType' => $userType, 'students' => $students]);
-        return view('product', ['wn' => $websiteName]);
+        return view('product', ['wn' => $websiteName, 'userType' => $userType]);
     }
 }
