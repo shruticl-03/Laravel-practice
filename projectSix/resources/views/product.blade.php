@@ -13,13 +13,17 @@
     {{--@includeWhen($userType,'mobile',['total_mobile'=>4])--}}
     {{--@includeUnless($userType,'mobile',['total_mobile'=>4])--}}
 
-    <h2>Students Name:</h2>
+    {{--<h2>Students Name:</h2>--}}
     {{--@foreach($students as $stu)
     @include('students')
     @endforeach--}}
 
     {{--@each('students',$students,'stu')--}}
-    @each('students',$students, 'stu','nostudent')
+    {{--@each('students',$students, 'stu','nostudent')--}}
+
+    @once
+    <h1>It will be evaluated once per rendering cycle</h1>
+    @endonce
     
     
     
